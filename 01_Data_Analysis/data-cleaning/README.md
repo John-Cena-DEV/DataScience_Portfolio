@@ -6,8 +6,14 @@ This project demonstrates how to clean a dataset by identifying and removing dup
 ## Problem Statement
 The dataset contained duplicate entries, which could lead to incorrect analysis. The goal was to:
 1. Identify duplicate records.
+<img width="957" height="364" alt="image" src="https://github.com/user-attachments/assets/538422f6-49e7-4e13-8de0-96e1b6a39f91" />
+
 2. Remove duplicates while keeping one unique record.
+USE df_cleaned = df.drop_duplicates()
+
 3. Save the cleaned dataset.
+<img width="957" height="335" alt="image" src="https://github.com/user-attachments/assets/851e4383-8885-4827-a28b-b53c24b84754" />
+
 
 ## Solution Approach
 
