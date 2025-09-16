@@ -5,6 +5,9 @@
 ## Summary
 This script reads patient rows from a Google Sheet (including a Drive folder link and an HT Date) and organizes patient folders into a **Year → Month → Day** hierarchy in Google Drive. It copies each patient folder into the correct date folder. The script supports **resume logic** to handle Apps Script execution time limits.
 
+<img width="765" height="281" alt="image" src="https://github.com/user-attachments/assets/f88222bb-9518-40b1-a3a7-c65262f910d1" />
+
+
 > ⚠️ **Privacy:** All patient data must be anonymized before adding to this repository. Do not push real patient-identifying data.
 
 ---
