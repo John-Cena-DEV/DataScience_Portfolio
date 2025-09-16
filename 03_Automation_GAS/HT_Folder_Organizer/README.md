@@ -50,6 +50,7 @@ You can use `sample_data.csv` as template. Important columns:
 - `Video Link`
 - `File/Folder Count`
 - `Structure`
+<img width="947" height="205" alt="image" src="https://github.com/user-attachments/assets/321f91cb-80ca-40d1-aa51-d737ce1dc75b" />
 
 ---
 
