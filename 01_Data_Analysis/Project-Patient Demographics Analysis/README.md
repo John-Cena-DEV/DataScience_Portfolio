@@ -48,9 +48,11 @@ Key features of the dataset include:
 - **Insight:** FUT cases typically involve higher graft counts than FUE  
 <img width="2104" height="603" alt="AVERAGE of Grafts vs Case Type" src="https://github.com/user-attachments/assets/d8a83606-2575-49e2-8967-ac41a7aa13b2" />
 
-### 3️⃣ Clinical Outcomes  
-- **Pivot Table:** Success vs Non-success across branches  
-- **Insight:** 85% overall success rate; Branch B shows slightly lower performance  
+### 3️⃣ Branch Distribution  
+- **Pivot Table:** AGe wise demographics across branches  
+- **Insight:** 30-39 was the most visited age group among both branches
+<img width="1118" height="615" alt="Branch vs Age" src="https://github.com/user-attachments/assets/f7f83bba-f2aa-4d0b-ad1f-9f356348a7cb" />
+
 
 ### 4️⃣ Patient Recovery Progress  
 - **Pivot Table:** Average improvement across 1–13 months  
