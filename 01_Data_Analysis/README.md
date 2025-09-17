@@ -3,7 +3,7 @@
 This folder contains projects focused on **exploratory data analysis and healthcare insights** using patient data (anonymized).
 
 ## Projects
-1. **Patient Demographics Analysis**
+1. **Patient Demographics Analysis** 01_Data_Analysis/Project-Patient Demographics Analysis/README.md
    - Dataset: Clinic patient records
    - Skills: Pandas, SQL, Matplotlib
    - Goal: Understand patient age groups, gender ratios, and geography.
@@ -17,3 +17,4 @@ This folder contains projects focused on **exploratory data analysis and healthc
    - Dataset: Clinic appointments
    - Skills: Time-series analysis
    - Goal: Identify peak appointment times and no-show patterns.
+
