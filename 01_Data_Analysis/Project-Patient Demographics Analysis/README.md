@@ -68,7 +68,8 @@ Key features of the dataset include:
 
 ### 📈 Forecasting & Predictive Modeling  
 - Applied **linear regression (LINEST)** to forecast surgery volume for upcoming months  
-- Prediction: ~120 surgeries expected next quarter  
+<img width="783" height="459" alt="Procedure and Forecast" src="https://github.com/user-attachments/assets/393b08f8-cd2a-4af5-ad9a-a1be66bcfb20" />
+
 
 ### ⚠️ Patient Risk Segmentation  
 - Defined **risk factors**: Age > 45, Grade ≥ 4, Grafts > 3000  
