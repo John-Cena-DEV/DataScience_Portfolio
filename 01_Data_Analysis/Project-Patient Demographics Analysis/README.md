@@ -65,6 +65,8 @@ Key features of the dataset include:
 ### 🔗 Correlation Analysis  
 - **Grafts vs Patient Result:** Moderate positive correlation (more grafts → higher success rate)  
 - **Age vs Recovery:** Slight negative correlation (younger patients recover faster)  
+<img width="2112" height="969" alt="AVERAGE of Grafts vs Age Bin" src="https://github.com/user-attachments/assets/ec2a0b75-67e0-473b-8455-b5db509552e6" />
+
 
 ### 📈 Forecasting & Predictive Modeling  
 - Applied **linear regression (LINEST)** to forecast surgery volume for upcoming months  
