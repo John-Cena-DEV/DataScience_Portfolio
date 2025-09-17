@@ -18,6 +18,8 @@ Key features of the dataset include:
 - **Outcomes:** Patient Result, Progress at 1–13 Months  
 - **Media & Marketing:** Consent, Video Shoot, Testimonial Type, Editors  
 
+<img width="958" height="398" alt="Screenshot 2025-09-17 174840" src="https://github.com/user-attachments/assets/1c894f18-d809-4962-90fd-1291670023f2" />
+
 ---
 
 ## 🧹 Data Cleaning & Preprocessing  
@@ -26,6 +28,9 @@ Key features of the dataset include:
 - Standardized date formats (`YYYY-MM-DD`) for time-series analysis  
 - Converted categorical outcomes (`Successful`, `Partial`, `Failed`) into numerical scale (1, 0.5, 0) for quantitative modeling  
 - Handled missing values (`0` for numeric, `Unknown` for categorical)  
+
+<img width="956" height="125" alt="image" src="https://github.com/user-attachments/assets/28003340-88ff-43a6-822e-043e051a6b26" />
+
 
 📌 *Skills Demonstrated:* **data wrangling, preprocessing, anonymization, data integrity**  
 
