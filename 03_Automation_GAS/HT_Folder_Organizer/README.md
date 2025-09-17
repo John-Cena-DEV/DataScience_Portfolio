@@ -36,6 +36,9 @@ Clinic staff uploaded patient documents to Drive without a consistent folder str
 5. Save, run `organizeByHTDate` (first run will ask for permissions).
 6. Optionally run `createTimeDrivenTrigger()` to run automatically every 5 minutes.
 
+<img width="959" height="436" alt="image" src="https://github.com/user-attachments/assets/68f9476d-a85c-474d-90be-a68c79629e30" />
+
+
 **Option B: Use clasp (source-managed approach)**  
 Use `clasp` to push code from this repo to an Apps Script project. (Search `clasp` docs if unfamiliar.)
 
