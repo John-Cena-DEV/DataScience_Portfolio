@@ -41,10 +41,12 @@ Key features of the dataset include:
 ### 1️⃣ Patient Volume Analysis  
 - **Pivot Table:** Surgeries by Month and Branch  
 - **Insight:** Seasonal peaks in June–July, Branch A has the highest patient volume  
+<img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/70d7c967-50b8-403c-9eff-173809ebcb63" />
 
 ### 2️⃣ Case Type & Grafts  
 - **Pivot Table:** Average grafts per Case Type  
 - **Insight:** FUT cases typically involve higher graft counts than FUE  
+<img width="2104" height="603" alt="AVERAGE of Grafts vs Case Type" src="https://github.com/user-attachments/assets/d8a83606-2575-49e2-8967-ac41a7aa13b2" />
 
 ### 3️⃣ Clinical Outcomes  
 - **Pivot Table:** Success vs Non-success across branches  
@@ -53,10 +55,6 @@ Key features of the dataset include:
 ### 4️⃣ Patient Recovery Progress  
 - **Pivot Table:** Average improvement across 1–13 months  
 - **Insight:** Noticeable improvement after 3 months; recovery plateaus after 9 months  
-
-### 5️⃣ Marketing & Media Insights  
-- **Pivot Table:** Testimonial and video shoot approvals  
-- **Insight:** 60% of patients consent to testimonials, providing valuable marketing opportunities  
 
 📌 *Skills Demonstrated:* **EDA, pivot tables, trend analysis, data visualization**  
 
