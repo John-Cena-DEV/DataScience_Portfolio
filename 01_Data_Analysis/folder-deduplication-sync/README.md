@@ -17,6 +17,9 @@ This saved a lot of manual time and ensured a consistent dataset.
 3. Copy missing files from the other folder. If a filename conflict occurs and files differ by content, the incoming file is renamed (keeps both).
 4. Optionally delete the duplicate folder after verifying the sync (requires confirmation).
 
+<img width="860" height="194" alt="image" src="https://github.com/user-attachments/assets/914c9c55-d4b7-4dee-83b0-00b02c32e416" />
+
+
 ## Features
 - Dry-run mode to preview changes (`--dry-run`).
 - Recursive syncing of nested directories (`--recursive`).
