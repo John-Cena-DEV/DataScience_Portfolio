@@ -7,6 +7,8 @@ Automated reconciliation of duplicate folders containing images (or other files)
 - Handle filename conflicts safely,
 - Optionally delete the redundant folder after sync.
 
+<img width="954" height="180" alt="image" src="https://github.com/user-attachments/assets/e8513860-0c61-4739-9d6b-71a71231db00" />
+
 This saved a lot of manual time and ensured a consistent dataset.
 
 ## How it works (short)
