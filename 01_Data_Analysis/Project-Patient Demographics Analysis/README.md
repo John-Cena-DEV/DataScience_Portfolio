@@ -105,3 +105,24 @@ Included visual insights using **Google Sheets dashboards**:
 ---
 
 ## 📂 Project Structure  
+
+HairTransplantAnalysis/
+├── data/
+│ └── cleaned_data.csv # anonymized dataset
+├── analysis/
+│ ├── pivot_tables.pdf # pivot tables summary
+│ └── charts/ # screenshots of visualizations
+├── README.md # project documentation
+
+
+
+---
+
+## 📌 Future Improvements  
+- Automate analysis with **Python (Pandas, Matplotlib, Seaborn)**  
+- Build an interactive dashboard using **Power BI / Tableau / Google Data Studio**  
+- Train a **predictive ML model** to classify patient outcomes based on pre-surgery features  
+
+
+
+
