@@ -83,6 +83,8 @@ Key features of the dataset include:
 ## 📊 Visualizations  
 Included visual insights using **Google Sheets dashboards**:  
 - Line chart → Monthly surgeries trend  
+<img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/0ec6f2df-37de-46a6-8ba4-6cd85fc8cd55" />
+
 - Line chart → Patient recovery progress (1–13 months)  
 - Bar chart → Branch-wise success rates
 <img width="880" height="588" alt="Patient Result Branch Wise" src="https://github.com/user-attachments/assets/3d619489-c143-4f3a-94b0-22d1cd5458e1" />
