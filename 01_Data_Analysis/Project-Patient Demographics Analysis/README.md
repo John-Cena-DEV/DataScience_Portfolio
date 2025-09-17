@@ -83,9 +83,12 @@ Key features of the dataset include:
 Included visual insights using **Google Sheets dashboards**:  
 - Line chart → Monthly surgeries trend  
 - Line chart → Patient recovery progress (1–13 months)  
-- Bar chart → Branch-wise success rates  
-- Pie chart → Testimonial approval distribution  
-- Histogram → Age distribution  
+- Bar chart → Branch-wise success rates
+<img width="880" height="588" alt="Patient Result Branch Wise" src="https://github.com/user-attachments/assets/3d619489-c143-4f3a-94b0-22d1cd5458e1" />
+  
+- Pie chart → Age distribution
+<img width="893" height="619" alt="Age vs Patient Count" src="https://github.com/user-attachments/assets/2c71e8f6-e473-48de-bb69-c78da5023bff" />
+
 
 📌 *Skills Demonstrated:* **data visualization, storytelling, business intelligence (BI)**  
 
