@@ -36,21 +36,14 @@ This saved a lot of manual time and ensured a consistent dataset.
 python sync_folders.py --folder-a "/path/to/Folder_A" --folder-b "/path/to/Folder_B" --dry-run --recursive
 Actually sync (copy missing files both directions):
 
-bash
-Copy code
 python sync_folders.py --folder-a "/path/to/Folder_A" --folder-b "/path/to/Folder_B" --recursive
 Move files (instead of copying) and then delete duplicate folder B after confirmation:
 
-bash
-Copy code
 python sync_folders.py --folder-a "/path/to/Folder_A" --folder-b "/path/to/Folder_B" --move --delete-duplicate
 Auto-scan a parent directory for likely duplicate folder pairs (based on normalized names):
 
-bash
-Copy code
+
 python sync_folders.py --parent-dir "/path/to/parent" --recursive --dry-run
 Force delete duplicate folder (USE WITH CAUTION):
 
-bash
-Copy code
 python sync_folders.py --folder-a A --folder-b B --delete-duplicate --force-delete
