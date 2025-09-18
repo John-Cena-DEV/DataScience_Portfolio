@@ -66,7 +66,7 @@ Key features of the dataset include:
 
 ### 5️⃣ Follow-up Compliance Analysis  
 - **Pivot Table:** % of patients attending each month (M1–M13)  
-- **Insight:** Retention drops sharply after Month 6. While 45% attend the 1st follow-up, **None** Visted after 7 Months.  
+- **Insight:** Retention drops sharply after Month 3. While 45% attend the 1st follow-up, **None** Visted after 7 Months.  
 - **Business Recommendation:**  
   - Introduce automated SMS/WhatsApp reminders after Month 3 to maintain engagement  
   - Offer small incentives (e.g., free check-up, consultation) for completing all 12 follow-ups
