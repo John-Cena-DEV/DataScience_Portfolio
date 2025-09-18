@@ -43,9 +43,6 @@ Key features of the dataset include:
 - **Insight:** Seasonal peaks in June–July, Haridwar has the highest patient volume  
 <img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/70d7c967-50b8-403c-9eff-173809ebcb63" />
 
-<img width="600" height="371" alt="chart" src="https://github.com/user-attachments/assets/ca5388fe-280f-44a2-8a7c-8b0483d0f993" />
-
-
 ### 2️⃣ Case Type & Grafts  
 - **Pivot Table:** Average grafts per Case Type  
 - **Insight:** FUT cases typically involve higher graft counts than FUE  
