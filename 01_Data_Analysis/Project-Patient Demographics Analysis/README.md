@@ -45,7 +45,8 @@ Key features of the dataset include:
 
 ### 2️⃣ Case Type & Grafts  
 - **Pivot Table:** Average grafts per Case Type  
-- **Insight:** FUT cases typically involve higher graft counts than FUE  
+- **Insight:** Average grafts increase steadily with patient age, from ~2800 in patients under 30 to ~4000 in patients over 40. Higher clinical grades also correspond to higher graft requirements.
+- **Business Recommendation:** This helps in inventory planning for graft supplies and cost estimation per age group. 
 <img width="2104" height="603" alt="AVERAGE of Grafts vs Case Type" src="https://github.com/user-attachments/assets/d8a83606-2575-49e2-8967-ac41a7aa13b2" />
 
 ### 3️⃣ Branch Distribution  
