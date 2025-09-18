@@ -38,7 +38,7 @@ Key features of the dataset include:
 
 ## 📈 Exploratory Data Analysis (EDA)  
 
-### 1️⃣ Patient Volume Analysis  
+### 1️⃣ Patient Demographics Analysis  
 - **Pivot Table:** Surgeries by Month and Branch  
 - **Insight:** Seasonal peaks in June–July, Haridwar has the highest patient volume  
 <img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/70d7c967-50b8-403c-9eff-173809ebcb63" />
