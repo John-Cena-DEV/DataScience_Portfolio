@@ -61,6 +61,7 @@ Key features of the dataset include:
 - **Pivot Table:** AVERAGE of Grafts vs Patient Result
 - **Insight:** Patients with >3500 grafts are 20% more likely to report ‘Good Result’ compared to those with fewer grafts.
 - **Business Recommendation:** Proper pre-surgery counseling can set expectations based on graft count and grade.
+<img width="884" height="371" alt="AVERAGE of Grafts vs Patient Result" src="https://github.com/user-attachments/assets/85adc919-7d20-4e08-b8c8-92ebf9f607cc" />
 
 📌 *Skills Demonstrated:* **EDA, pivot tables, trend analysis, data visualization**  
 
