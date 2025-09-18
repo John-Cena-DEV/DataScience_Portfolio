@@ -40,7 +40,7 @@ Key features of the dataset include:
 
 ### 1️⃣ Patient Volume Analysis  
 - **Pivot Table:** Surgeries by Month and Branch  
-- **Insight:** Seasonal peaks in June–July, Branch A has the highest patient volume  
+- **Insight:** Seasonal peaks in June–July, Haridwar has the highest patient volume  
 <img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/70d7c967-50b8-403c-9eff-173809ebcb63" />
 
 ### 2️⃣ Case Type & Grafts  
