@@ -63,6 +63,16 @@ Key features of the dataset include:
 - **Business Recommendation:** Proper pre-surgery counseling can set expectations based on graft count and grade.
 <img width="884" height="371" alt="AVERAGE of Grafts vs Patient Result" src="https://github.com/user-attachments/assets/85adc919-7d20-4e08-b8c8-92ebf9f607cc" />
 
+
+### 5️⃣ Follow-up Compliance Analysis  
+- **Pivot Table:** % of patients attending each month (M1–M13)  
+- **Insight:** Retention drops sharply after Month 6. While 45% attend the 1st follow-up, **None** Visted after 7 Months.  
+- **Business Recommendation:**  
+  - Introduce automated SMS/WhatsApp reminders after Month 3 to maintain engagement  
+  - Offer small incentives (e.g., free check-up, consultation) for completing all 12 follow-ups
+
+<img width="881" height="480" alt="Visit Percentage vs Month" src="https://github.com/user-attachments/assets/4d8794d0-1d69-4b24-9f73-d339c6798324" />
+
 📌 *Skills Demonstrated:* **EDA, pivot tables, trend analysis, data visualization**  
 
 ---
