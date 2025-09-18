@@ -57,9 +57,10 @@ Key features of the dataset include:
 <img width="1118" height="615" alt="Branch vs Age" src="https://github.com/user-attachments/assets/f7f83bba-f2aa-4d0b-ad1f-9f356348a7cb" />
 
 
-### 4️⃣ Patient Recovery Progress  
-- **Pivot Table:** Average improvement across 1–13 months  
-- **Insight:** Noticeable improvement after 3 months; recovery plateaus after 9 months  
+### 4️⃣ Patient Result Distribution  
+- **Pivot Table:** AVERAGE of Grafts vs Patient Result
+- **Insight:** Patients with >3500 grafts are 20% more likely to report ‘Good Result’ compared to those with fewer grafts.
+- **Business Recommendation:** Proper pre-surgery counseling can set expectations based on graft count and grade.
 
 📌 *Skills Demonstrated:* **EDA, pivot tables, trend analysis, data visualization**  
 
