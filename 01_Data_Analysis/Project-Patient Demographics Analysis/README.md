@@ -50,7 +50,8 @@ Key features of the dataset include:
 
 ### 3️⃣ Branch Distribution  
 - **Pivot Table:** AGe wise demographics across branches  
-- **Insight:** 30-39 was the most visited age group among both branches
+- **Insight:** Most patients (45%) are in the 30–39 age group, indicating the core customer base.
+- **Business Recommendation:** Target marketing campaigns to this segment.
 <img width="1118" height="615" alt="Branch vs Age" src="https://github.com/user-attachments/assets/f7f83bba-f2aa-4d0b-ad1f-9f356348a7cb" />
 
 
