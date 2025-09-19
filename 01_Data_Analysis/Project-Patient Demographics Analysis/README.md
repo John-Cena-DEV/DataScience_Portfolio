@@ -52,20 +52,21 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 
 ## 📈 Exploratory Data Analysis (EDA)  
 
-### 1️⃣ Patient Demographics Analysis  
-- **Pivot Table:** Surgeries by Month and Branch  
-- **Insight:** Surgeries show a seasonal spike in June (holiday period), and outcomes have improved in the last 6 months with fewer ‘Average’ ratings.
-- **Business Recommendation:** Allocate more staff in December–January to handle demand. Track ongoing quality improvements.
-<img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/70d7c967-50b8-403c-9eff-173809ebcb63" />
+### 1️⃣ Patient Demographics Analysis    
+- **Insight:** Most patients (45%) are in the 30–39 age group, indicating the core customer base.
+- **Business Recommendation:** Target marketing campaigns to this segment.
+<img width="1176" height="575" alt="image" src="https://github.com/user-attachments/assets/bbaccb25-78e9-41cb-96bd-b3de6b14dbc5" />
+
 
 ### 2️⃣ Case Type & Grafts  
 - **Pivot Table:** Average grafts per Case Type  
 - **Insight:** Average grafts increase steadily with patient age, from ~2800 in patients under 30 to ~4000 in patients over 40. Higher clinical grades also correspond to higher graft requirements.
 - **Business Recommendation:** This helps in inventory planning for graft supplies and cost estimation per age group. 
-<img width="2104" height="603" alt="AVERAGE of Grafts vs Case Type" src="https://github.com/user-attachments/assets/d8a83606-2575-49e2-8967-ac41a7aa13b2" />
+<img width="1176" height="575" alt="image" src="https://github.com/user-attachments/assets/2e0a96bc-b9fa-4da6-922f-6841f2ccd623" />
+
 
 ### 3️⃣ Branch Distribution  
-- **Pivot Table:** AGe wise demographics across branches  
+- **Pivot Table:** Age wise demographics across branches  
 - **Insight:** Most patients (45%) are in the 30–39 age group, indicating the core customer base.
 - **Business Recommendation:** Target marketing campaigns to this segment.
 <img width="1118" height="615" alt="Branch vs Age" src="https://github.com/user-attachments/assets/f7f83bba-f2aa-4d0b-ad1f-9f356348a7cb" />
