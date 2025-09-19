@@ -118,7 +118,7 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 This project also includes a [`notebooks/`](notebooks/) folder with:
 - `01_data_cleaning_and_eda.ipynb` → Data cleaning, preprocessing, and exploratory data analysis  
 - `02_retention_analysis.ipynb` → Follow-up retention curves and branch-level compliance  
-- `03_modeling_patient_result.ipynb` → Predictive modeling of patient outcomes  
+
 
 Below are some sample Python snippets and their outputs ⬇️
 
@@ -133,8 +133,36 @@ for col in followup_cols:
 df['Followup_Count'] = df[followup_cols].sum(axis=1)
 df['Followup_Completed'] = (df['Followup_Count'] >= 12).astype(int)
 ```
+<img width="1176" height="576" alt="image" src="https://github.com/user-attachments/assets/193858b5-30b7-4b23-bf16-ce155e0ffe0e" />
 
+### 2️⃣ Data Cleaning & Feature Engineering
+```python
+def kpi_summary(df):
+    kpis = {}
+    kpis['total_patients'] = int(df['FUE ID '].nunique())
+    kpis['surgeries_this_month'] = int(df[df['Month_Year'] == df['Month_Year'].max()].shape[0])
+    kpis['avg_grafts'] = float(df['Grafts'].mean())
+    kpis['good_result_rate'] = float((df['Patient Result'] == 'Good').mean())
+    return kpis
 
+# Convert to lists
+labels = list(kpis.keys())
+values = list(kpis.values())
+
+plt.figure(figsize=(8,5))
+plt.bar(labels, values, color="skyblue", edgecolor="black")
+
+plt.title("Clinic KPI Summary", fontsize=16, weight="bold")
+plt.ylabel("Value")
+plt.xticks(rotation=20)
+
+# Annotate values
+for i, v in enumerate(values):
+    plt.text(i, v + (0.02 * max(values)), str(round(v,2)), ha='center', fontsize=12)
+
+plt.show()
+```
+<img width="1070" height="771" alt="image" src="https://github.com/user-attachments/assets/e156f093-7c96-415a-908b-ab80621a6fdb" />
 
 ---
 
