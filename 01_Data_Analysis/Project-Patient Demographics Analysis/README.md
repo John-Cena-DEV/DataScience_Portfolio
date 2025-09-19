@@ -8,6 +8,16 @@ The dataset contains information on patient demographics, surgery details, graft
 The objective is to showcase **end-to-end data analysis workflow** using **Google Sheets (pivot tables, charts, formulas)** and communicate **actionable insights** that could support clinical decision-making and marketing strategies.  
 
 ---
+## 🗂️ Key Business Insights 
+
+- Monthly surgeries peaked at 290 in January, declined to a low of 247 in March, recovered steadily from April (273) to July (275), then dropped sharply to 204 in August.
+- Haridwar branch reports 3 to 4 times more patients than Delhi in the 20-29 and 30-39 age groups.
+- Both Haridwar and Delhi have minimal patient counts beyond age 39, indicating most surgeries are performed on patients under 40.
+- The 40-49 age group, despite having fewer patients (90), has a slightly higher average graft count (~4,480) than younger cohorts.
+- The single patient in the 60-69 age group shows a graft average spike (~5,000), suggesting an outlier effect due to small sample size. Haridwar has a significantly higher "No Consent" count (865) compared to Delhi (209), indicating possible differences in consent policies between branches.
+- A duplicate "No" consent entry (9) for Haridwar points to potential data entry inconsistencies in consent records.
+
+---
 
 ## 🗂️ Dataset Description  
 Key features of the dataset include:  
@@ -20,8 +30,9 @@ Key features of the dataset include:
 
 <img width="958" height="398" alt="Screenshot 2025-09-17 174840" src="https://github.com/user-attachments/assets/1c894f18-d809-4962-90fd-1291670023f2" />
 
----
 
+ 
+---
 ## 🧹 Data Cleaning & Preprocessing  
 - Removed duplicate records to ensure data integrity  
 - Anonymized patient names into unique IDs (P001, P002, …) to maintain confidentiality  
