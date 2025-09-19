@@ -127,10 +127,9 @@ Below are some sample queries and results ⬇️
 ## 1️⃣ Surgeries per Month  
 This query counts the number of surgeries performed each month:  
 
-sql
 SELECT 
-    DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, 
-    COUNT(`FUE ID`) AS Number_of_Surgeries
+      DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, 
+      COUNT(`FUE ID`) AS Number_of_Surgeries
 FROM dataset
 GROUP BY month_year
 ORDER BY Number_of_Surgeries DESC;
@@ -140,7 +139,9 @@ ORDER BY Number_of_Surgeries DESC;
 
 ### 2️⃣ Average Grafts by Age Bin
 
-SELECT `Age Bin` as Age_Bins, round(avg(`Grafts`),0) as Avg_Grafts from dataset
+SELECT 
+    `Age Bin` as Age_Bins, 
+     round(avg(`Grafts`),0) as Avg_Grafts from dataset
 
 group by Age_Bins
 
