@@ -128,10 +128,14 @@ Below are some sample queries and results ⬇️
 This query counts the number of surgeries performed each month:  
 
 SELECT 
-      DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, 
-      COUNT(`FUE ID`) AS Number_of_Surgeries
+      
+  DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, 
+  COUNT(`FUE ID`) AS Number_of_Surgeries
+
 FROM dataset
+
 GROUP BY month_year
+
 ORDER BY Number_of_Surgeries DESC;
 
 
