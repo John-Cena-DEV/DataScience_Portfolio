@@ -135,12 +135,12 @@ Included visual insights using **Google Sheets dashboards**:
 
 ---
 
-## 🛠️ Tools & Techniques  
-- **Google Sheets** → Pivot Tables, Charts, Dashboards  
-- **Statistical Functions** → `CORREL`, `LINEST`, `COUNTIFS`, `AVERAGEIF`  
-- **Data Analysis Concepts** → EDA, Time Series Trend Analysis, Regression, Segmentation, Forecasting  
-- **Version Control** → GitHub for portfolio presentation  
-
+## 🛠 Tools & Technologies
+- **Python**: pandas, numpy, matplotlib, seaborn, scikit-learn  
+- **SQL**: Aggregations, KPIs, retention queries  
+- **Google Sheets / Excel**: Pivot tables, KPI summaries  
+- **Visualization**: Line charts, bar charts, cohort retention plots  
+- **Version Control**: GitHub for reproducibility 
 ---
 
 ## 📂 Project Structure  
