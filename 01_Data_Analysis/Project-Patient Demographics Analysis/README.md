@@ -135,7 +135,7 @@ df['Followup_Completed'] = (df['Followup_Count'] >= 12).astype(int)
 ```
 <img width="1176" height="576" alt="image" src="https://github.com/user-attachments/assets/193858b5-30b7-4b23-bf16-ce155e0ffe0e" />
 
-### 2️⃣ Data Cleaning & Feature Engineering
+### 2️⃣ Clinic KPI Summary
 ```python
 def kpi_summary(df):
     kpis = {}
