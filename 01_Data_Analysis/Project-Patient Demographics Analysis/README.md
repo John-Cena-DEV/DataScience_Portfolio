@@ -114,6 +114,30 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 
 ---
 
+## 🐍 Python Analysis
+
+This project also includes a [`notebooks/`](notebooks/) folder with:
+- `01_data_cleaning_and_eda.ipynb` → Data cleaning, preprocessing, and exploratory data analysis  
+- `02_retention_analysis.ipynb` → Follow-up retention curves and branch-level compliance  
+- `03_modeling_patient_result.ipynb` → Predictive modeling of patient outcomes  
+
+Below are some sample Python snippets and their outputs ⬇️
+
+### 1️⃣ Data Cleaning & Feature Engineering
+```python
+# Convert TRUE/FALSE follow-up columns to 1/0
+followup_cols = [c for c in df.columns if c.startswith("Followup_M")]
+for col in followup_cols:
+    df[col] = df[col].astype(str).str.upper().map({"TRUE": 1, "FALSE": 0})
+
+# Create new features
+df['Followup_Count'] = df[followup_cols].sum(axis=1)
+df['Followup_Completed'] = (df['Followup_Count'] >= 12).astype(int)
+
+
+
+---
+
 ## 🗄 SQL Analysis
 
 This project also includes a dedicated [`SQL/`](SQL/) folder with:
