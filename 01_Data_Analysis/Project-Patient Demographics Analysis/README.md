@@ -147,12 +147,20 @@ Included visual insights using **Google Sheets dashboards**:
 
 HairTransplantAnalysis/
 ├── data/
-│ └── cleaned_data.csv # anonymized dataset
-├── analysis/
-│ ├── pivot_tables.pdf # pivot tables summary
-│ └── charts/ # screenshots of visualizations
-├── README.md # project documentation
-
+│   └── cleaned_data.csv
+├── notebooks/
+│   ├── 01_data_cleaning_and_eda.ipynb
+│   ├── 02_retention_analysis.ipynb
+│   └── 03_modeling_patient_result.ipynb
+├── sql/
+│   └── core_queries.sql
+├── Analysis/
+│   ├── Charts_Output.pdf
+│   ├── Python_Charts.pdf
+│   └── Pivot_Tables
+├── README.md
+└── slides/
+    └── executive_summary.pdf
 
 
 ---
