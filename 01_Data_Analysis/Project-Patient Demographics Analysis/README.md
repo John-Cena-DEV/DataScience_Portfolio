@@ -167,9 +167,7 @@ ORDER BY Number_of_Surgeries DESC;
 SELECT 
     `Age Bin` as Age_Bins, 
      round(avg(`Grafts`),0) as Avg_Grafts from dataset
-
 group by Age_Bins
-
 order by Avg_Grafts desc;
 ```
 <img width="118" height="132" alt="Screenshot 2025-09-19 141014" src="https://github.com/user-attachments/assets/cd12ffaa-e1d6-4bd3-846a-98a3add11f0d" />
