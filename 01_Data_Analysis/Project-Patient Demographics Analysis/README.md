@@ -114,18 +114,30 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 
 ---
 
-## 📊 Visualizations  
-Included visual insights using **Google Sheets dashboards**:  
-- Line chart → Monthly surgeries trend  
-<img width="880" height="395" alt="Delhi and Haridwar" src="https://github.com/user-attachments/assets/0ec6f2df-37de-46a6-8ba4-6cd85fc8cd55" />
+## 🗄 SQL Analysis
 
-- Line chart → Patient recovery progress (1–13 months)  
-- Bar chart → Branch-wise success rates
-<img width="880" height="588" alt="Patient Result Branch Wise" src="https://github.com/user-attachments/assets/3d619489-c143-4f3a-94b0-22d1cd5458e1" />
-  
-- Pie chart → Age distribution
-<img width="893" height="619" alt="Age vs Patient Count" src="https://github.com/user-attachments/assets/2c71e8f6-e473-48de-bb69-c78da5023bff" />
+This project also includes a dedicated [`SQL/`](SQL/) folder with:
+- `core_queries.sql` → collection of KPI, retention, and branch performance queries
+- `SQL_Outputs.pdf/` → screenshots / exported results of query outputs
 
+Below are some sample queries and results ⬇️
+
+### 1️⃣ Surgeries per Month
+
+SELECT DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, count(`FUE ID`) as Number_of_Surgeries
+FROM dataset
+group by month_year
+order by Number_of_Surgeries desc;
+
+<img width="185" height="185" alt="Screenshot 2025-09-19 140800" src="https://github.com/user-attachments/assets/a482c51d-c3bf-4e35-8247-794d6f470e0a" />
+
+### 2️⃣ Average Grafts by Age Bin
+
+SELECT `Age Bin` as Age_Bins, round(avg(`Grafts`),0) as Avg_Grafts from dataset
+group by Age_Bins
+order by Avg_Grafts desc;
+
+<img width="118" height="132" alt="Screenshot 2025-09-19 141014" src="https://github.com/user-attachments/assets/cd12ffaa-e1d6-4bd3-846a-98a3add11f0d" />
 
 📌 *Skills Demonstrated:* **data visualization, storytelling, business intelligence (BI)**  
 
