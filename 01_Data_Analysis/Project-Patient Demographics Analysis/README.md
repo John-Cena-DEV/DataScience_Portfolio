@@ -15,7 +15,6 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 - Both Haridwar and Delhi have minimal patient counts beyond age 39, indicating most surgeries are performed on patients under 40.
 - The 40-49 age group, despite having fewer patients (90), has a slightly higher average graft count (~4,480) than younger cohorts.
 - The single patient in the 60-69 age group shows a graft average spike (~5,000), suggesting an outlier effect due to small sample size. Haridwar has a significantly higher "No Consent" count (865) compared to Delhi (209), indicating possible differences in consent policies between branches.
-- A duplicate "No" consent entry (9) for Haridwar points to potential data entry inconsistencies in consent records.
 
 ---
 
