@@ -122,15 +122,19 @@ This project also includes a dedicated [`SQL/`](SQL/) folder with:
 
 Below are some sample queries and results ⬇️
 
-### 1️⃣ Surgeries per Month
+# SQL Analysis Queries  
 
-SELECT DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, count(`FUE ID`) as Number_of_Surgeries
+## 1️⃣ Surgeries per Month  
+This query counts the number of surgeries performed each month:  
 
+sql
+SELECT 
+    DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, 
+    COUNT(`FUE ID`) AS Number_of_Surgeries
 FROM dataset
+GROUP BY month_year
+ORDER BY Number_of_Surgeries DESC;
 
-group by month_year
-
-order by Number_of_Surgeries desc;
 
 <img width="185" height="185" alt="Screenshot 2025-09-19 140800" src="https://github.com/user-attachments/assets/a482c51d-c3bf-4e35-8247-794d6f470e0a" />
 
