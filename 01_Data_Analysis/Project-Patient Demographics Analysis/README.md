@@ -8,7 +8,7 @@ The dataset contains information on patient demographics, surgery details, graft
 The objective is to showcase **end-to-end data analysis workflow** using **Google Sheets (pivot tables, charts, formulas)** and communicate **actionable insights** that could support clinical decision-making and marketing strategies.  
 
 ---
-## 🗂️ Key Business Insights 
+## 🗂️ Key Data Insights 
 
 - Monthly surgeries peaked at 290 in January, declined to a low of 247 in March, recovered steadily from April (273) to July (275), then dropped sharply to 204 in August.
 - Haridwar branch reports 3 to 4 times more patients than Delhi in the 20-29 and 30-39 age groups.
