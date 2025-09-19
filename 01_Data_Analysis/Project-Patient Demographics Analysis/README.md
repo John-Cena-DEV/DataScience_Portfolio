@@ -19,14 +19,17 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 
 ---
 
-## 🗂️ Dataset Description  
-Key features of the dataset include:  
-- **Month** – surgery timeline  
-- **QHT ID** – anonymized patient identifier  
-- **Demographics:** Age, Language, Location, Branch  
-- **Procedure Details:** Case Type, Grade, Grafts, Surgery Date, Latest Visit Date  
-- **Outcomes:** Patient Result, Progress at 1–13 Months  
-- **Media & Marketing:** Consent, Video Shoot, Testimonial Type, Editors  
+## 🗂 Dataset Description
+- **Demographics**: Age, Age Bin, Location, Branch, Language  
+- **Surgery details**: Surgery Date, Grade, Grafts, Case Type  
+- **Follow-ups**: 13 monthly check-ups (`Followup_M1 … Followup_M13`)  
+- **Outcome**: Patient Result, Looks, Communication Skill  
+- **Consent & Media**: Consent Form, Video Shoot, Testimonial Approval  
+- **Derived Features**:  
+  - `Followup_Count` (number of follow-ups attended)  
+  - `Followup_Completed` (1 if ≥12 months attended, else 0)  
+  - `Has_Any_Followup` (1 if at least one follow-up attended)  
+  - `Month_Year`, `Year`, `Age_Bin_Clean` 
 
 <img width="958" height="398" alt="Screenshot 2025-09-17 174840" src="https://github.com/user-attachments/assets/1c894f18-d809-4962-90fd-1291670023f2" />
 
