@@ -125,8 +125,11 @@ Below are some sample queries and results ⬇️
 ### 1️⃣ Surgeries per Month
 
 SELECT DATE_FORMAT(STR_TO_DATE(`Surgery Date`, '%d-%m-%Y'), '%b-%Y') AS month_year, count(`FUE ID`) as Number_of_Surgeries
+
 FROM dataset
+
 group by month_year
+
 order by Number_of_Surgeries desc;
 
 <img width="185" height="185" alt="Screenshot 2025-09-19 140800" src="https://github.com/user-attachments/assets/a482c51d-c3bf-4e35-8247-794d6f470e0a" />
@@ -134,7 +137,9 @@ order by Number_of_Surgeries desc;
 ### 2️⃣ Average Grafts by Age Bin
 
 SELECT `Age Bin` as Age_Bins, round(avg(`Grafts`),0) as Avg_Grafts from dataset
+
 group by Age_Bins
+
 order by Avg_Grafts desc;
 
 <img width="118" height="132" alt="Screenshot 2025-09-19 141014" src="https://github.com/user-attachments/assets/cd12ffaa-e1d6-4bd3-846a-98a3add11f0d" />
