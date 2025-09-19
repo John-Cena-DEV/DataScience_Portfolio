@@ -122,16 +122,24 @@ This project also includes a [`notebooks/`](notebooks/) folder with:
 
 Below are some sample Python snippets and their outputs ⬇️
 
-### 1️⃣ Data Cleaning & Feature Engineering
+### 1️⃣ Retention Curve
 ```python
-# Convert TRUE/FALSE follow-up columns to 1/0
-followup_cols = [c for c in df.columns if c.startswith("Followup_M")]
-for col in followup_cols:
-    df[col] = df[col].astype(str).str.upper().map({"TRUE": 1, "FALSE": 0})
+retention = []
+total_patients = df['FUE_ID'].nunique()
 
-# Create new features
-df['Followup_Count'] = df[followup_cols].sum(axis=1)
-df['Followup_Completed'] = (df['Followup_Count'] >= 12).astype(int)
+for i, col in enumerate(followup_cols, start=1):
+    attended = df[col].sum()
+    retention.append({'Month': i, 'Retention_%': attended / total_patients * 100})
+
+ret_df = pd.DataFrame(retention)
+
+# Plot
+plt.plot(ret_df['Month'], ret_df['Retention_%'], marker='o')
+plt.title("Follow-up Retention Curve")
+plt.xlabel("Months after surgery")
+plt.ylabel("Retention %")
+plt.show()
+
 ```
 <img width="1176" height="576" alt="image" src="https://github.com/user-attachments/assets/193858b5-30b7-4b23-bf16-ce155e0ffe0e" />
 
