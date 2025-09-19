@@ -86,7 +86,7 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
   - Introduce automated SMS/WhatsApp reminders after Month 3 to maintain engagement  
   - Offer small incentives (e.g., free check-up, consultation) for completing all 12 follow-ups
 
-<img width="881" height="480" alt="Visit Percentage vs Month" src="https://github.com/user-attachments/assets/4d8794d0-1d69-4b24-9f73-d339c6798324" />
+<img width="932" height="599" alt="image" src="https://github.com/user-attachments/assets/33f43918-ccf0-4550-b8f3-9070fe03167f" />
 
 📌 *Skills Demonstrated:* **EDA, pivot tables, trend analysis, data visualization**  
 
