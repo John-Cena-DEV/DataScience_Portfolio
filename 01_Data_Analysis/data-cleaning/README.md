@@ -173,11 +173,4 @@ You can use `sample_data.csv` as template. Important columns:
 
 ---
 
-## Demo assets (recommended)
-- Add a before/after screenshot of Drive structure: `before.png`, `after.png`.
-- Record a small GIF showing a single folder being copied into the Year/Month/Day path and display in the README:
-  ```markdown
-  ![demo](./demo.gif)
-
-
 
