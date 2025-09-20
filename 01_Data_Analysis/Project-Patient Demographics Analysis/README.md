@@ -237,21 +237,21 @@ order by Avg_Grafts desc;
 ## 📂 Project Structure  
 
 HairTransplantAnalysis/
-├── data/
-│   └── cleaned_data.csv
-├── notebooks/
-│   ├── 01_data_cleaning_and_eda.ipynb
-│   ├── 02_retention_analysis.ipynb
-│   └── 03_modeling_patient_result.ipynb
-├── sql/
-│   └── core_queries.sql
-├── Analysis/
-│   ├── Charts_Output.pdf
-│   ├── Python_Charts.pdf
-│   └── Pivot_Tables
-├── README.md
-└── slides/
-    └── executive_summary.pdf
+├── data/ # Raw & cleaned datasets
+│ └── cleaned_data.csv
+├── notebooks/ # Jupyter notebooks for analysis
+│ ├── 01_data_cleaning_and_eda.ipynb
+│ ├── 02_retention_analysis.ipynb
+│ └── 03_modeling_patient_result.ipynb
+├── sql/ # SQL queries for KPIs & analysis
+│ └── core_queries.sql
+├── Analysis/ # Reports, charts & pivot outputs
+│ ├── Charts_Output.pdf
+│ ├── Python_Charts.pdf
+│ └── Pivot_Tables
+├── slides/ # Business/Executive presentation
+│ └── executive_summary.pdf
+├── README.md # Project documentation
 
 
 ---
