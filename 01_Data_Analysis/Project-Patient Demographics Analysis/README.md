@@ -1,7 +1,7 @@
 # 📊 Hair Transplant Clinic Data Analysis  
 
 ## ⚡ Summary  
-- **What:** Analyzed anonymized data from a hair transplant clinic (**~1,500+ patients**).  
+- **What:** Analyzed anonymized data from a hair transplant clinic (**~2,500+ patients**).  
 - **How:** Data cleaning → exploratory data analysis (EDA) → forecasting → SQL KPIs → insights & recommendations.  
 - **Impact:** Found retention drops **from 45% (Month 1) → 0% (Month 7)**; identified core patient group (**30–39 yrs, 45% of total**); proposed targeted marketing & retention strategies.  
 - **Tools:** Python (pandas, matplotlib, sklearn), SQL, Google Sheets/Excel, GitHub for reproducibility.  
