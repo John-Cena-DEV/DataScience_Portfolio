@@ -1,4 +1,4 @@
-[README (8).md](https://github.com/user-attachments/files/22438635/README.8.md)# Data Cleaning & Deduplication in Python
+# Data Cleaning & Deduplication in Python
 
 ## Project Overview
 This project demonstrates how to clean a dataset by identifying and removing duplicate records using Python. Ensuring data accuracy and consistency is critical for any data analysis workflow.
