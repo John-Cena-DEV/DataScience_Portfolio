@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Transplant Clinic | Business Intelligence Dashboard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js and Datalabels Plugin CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f8fafc;
+        }
+        canvas {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .card-bg-pattern {
+            background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M 50 10 C 50 10 60 40 50 50 C 40 40 50 10 50 10 z" fill="%23d1d5db" opacity="0.1"%3E%3C/path%3E%3C/svg%3E');
+            background-size: 150px;
+        }
+        .kpi-card-icon {
+            color: #1a4d3a;
+        }
+        .chart-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+
+    <div class="container mx-auto max-w-7xl space-y-10">
+        <!-- Dashboard Header -->
+        <header class="text-center md:text-left p-6 md:p-8 rounded-2xl shadow-xl transition-all duration-300 transform bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700">
+            <h1 class="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-green-600">Hair Transplant Clinic: Data Insights</h1>
+            <p class="mt-2 text-base text-gray-300 max-w-2xl mx-auto md:mx-0">An interactive dashboard showcasing key findings from the clinic's patient and operational data.</p>
+        </header>
+
+        <!-- KPI Snapshot -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- KPI Card 1 -->
+            <div class="card-bg-pattern bg-white p-6 rounded-2xl shadow-lg border border-gray-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div class="kpi-card-icon mb-2">
+                    <svg class="w-12 h-12 text-teal-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500">Total Patients</h3>
+                <p class="text-4xl font-extrabold text-gray-800 mt-2">3,124</p>
+            </div>
+            <!-- KPI Card 2 -->
+            <div class="card-bg-pattern bg-white p-6 rounded-2xl shadow-lg border border-gray-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div class="kpi-card-icon mb-2">
+                    <svg class="w-12 h-12 text-teal-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2a1 1 0 100-2h-2zM5 3a1 1 0 100 2h.28a2 2 0 011.72 1h8A2 2 0 0115.72 5H16a1 1 0 100-2h-.28A2 2 0 0113 5H5a1 1 0 00-1 1v2a1 1 0 100 2v5a1 1 0 001 1h8a1 1 0 001-1v-5a1 1 0 100-2v-2a2 2 0 01-2-2h-8z"></path></svg>
+                </div>
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500">Avg. Grafts per Patient</h3>
+                <p class="text-4xl font-extrabold text-gray-800 mt-2">3,550</p>
+            </div>
+            <!-- KPI Card 3 -->
+            <div class="card-bg-pattern bg-white p-6 rounded-2xl shadow-lg border border-gray-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div class="kpi-card-icon mb-2">
+                    <svg class="w-12 h-12 text-teal-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path><path fill-rule="evenodd" d="M3 8a2 2 0 100 4h14a2 2 0 100-4H3z" clip-rule="evenodd"></path><path d="M2 13a2 2 0 100 4h16a2 2 0 100-4H2z"></path></svg>
+                </div>
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500">New Patients (Last 30 days)</h3>
+                <p class="text-4xl font-extrabold text-gray-800 mt-2">204</p>
+            </div>
+            <!-- KPI Card 4 -->
+            <div class="card-bg-pattern bg-white p-6 rounded-2xl shadow-lg border border-gray-200 text-center flex flex-col items-center transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div class="kpi-card-icon mb-2">
+                    <svg class="w-12 h-12 text-green-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                </div>
+                <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500">Overall "Good" Result Rate</h3>
+                <p class="text-4xl font-extrabold text-green-600 mt-2">80%</p>
+            </div>
+        </section>
+
+        <!-- Main Grid for Charts -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1: Demographics Analysis -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">1. Patient Demographics Analysis</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Most patients (45%) are in the 30–39 age group, indicating the core customer base."</p>
+                <div class="flex-grow min-h-[300px] relative">
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Target marketing campaigns and educational content specifically to the 30-39 year old segment.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Grafts by Age Analysis -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">2. Case Type & Grafts Analysis</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Average grafts increase steadily with patient age..."</p>
+                <div class="flex-grow min-h-[300px] relative">
+                    <canvas id="graftsByAgeChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Use age-based graft averages for more accurate inventory planning and surgical cost estimations.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Patient Result Distribution -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">4. Patient Result Distribution</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Patients with >3500 grafts are 20% more likely to report ‘Good Result’..."</p>
+                <div class="flex-grow min-h-[300px] relative">
+                    <canvas id="resultDistributionChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Use graft count data during pre-surgery counseling to set realistic patient expectations.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Branch Patient Distribution (2/3 width on large screens) -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 col-span-1 lg:col-span-2 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">3. Branch Patient Distribution</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Haridwar branch attracts 3-4 times more patients than Delhi in the core under-40 age groups."</p>
+                <div class="flex-grow min-h-[350px] relative">
+                    <canvas id="branchDistributionChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Investigate Haridwar's success in attracting younger demographics and apply learnings to Delhi's marketing strategy.</p>
+                </div>
+            </div>
+
+            <!-- Card 5: Follow-up Compliance Analysis (Full Width) -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 col-span-1 lg:col-span-1 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">5. Follow-up Compliance Analysis</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Retention drops sharply after Month 3. While 45% attend the 1st follow-up, none visited after 7 Months."</p>
+                <div class="flex-grow min-h-[350px] relative">
+                    <canvas id="retentionChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Introduce automated SMS/WhatsApp reminders starting from Month 3. Offer small incentives for completing all 12 follow-ups to improve long-term engagement.</p>
+                </div>
+            </div>
+
+            <!-- Card 6: Monthly Surgeries (new chart) -->
+            <div class="chart-card bg-white p-6 rounded-2xl shadow-lg border border-gray-200 col-span-1 md:col-span-2 lg:col-span-3 flex flex-col transition-all duration-300">
+                <h3 class="text-xl font-semibold text-gray-700">6. Monthly Surgery Trends</h3>
+                <p class="text-sm text-gray-500 italic mt-1 mb-4">"Monthly surgeries peaked in January, declined to a low in March, then dropped sharply in August."</p>
+                <div class="flex-grow min-h-[350px] relative">
+                    <canvas id="monthlySurgeriesChart"></canvas>
+                </div>
+                <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-200">
+                    <strong class="block font-semibold text-gray-800 mb-1">Business Recommendation:</strong> 
+                    <p class="text-sm text-gray-600">Analyze the factors contributing to the sharp decline in August to prevent similar drops in the future.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Register the datalabels plugin
+        Chart.register(ChartDataLabels);
+
+        // --- CHART CONFIG DEFAULTS ---
+        Chart.defaults.font.family = "'Inter', sans-serif";
+        Chart.defaults.plugins.legend.position = 'bottom';
+        Chart.defaults.plugins.tooltip.boxPadding = 4;
+        Chart.defaults.plugins.tooltip.displayColors = false;
+
+        // --- 1. DEMOGRAPHICS CHART ---
+        const ctx1 = document.getElementById('demographicsChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'doughnut',
+            data: {
+                labels: ['20-29', '30-39', '40-49', '50+'],
+                datasets: [{
+                    label: '% of Patients',
+                    data: [30, 45, 20, 5],
+                    backgroundColor: ['#1a73e8', '#4285f4', '#66a3ff', '#99c2ff'],
+                    borderColor: '#ffffff',
+                    borderWidth: 2,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: { callbacks: { label: (c) => `${c.label}: ${c.raw}%` } },
+                    datalabels: {
+                        color: '#fff',
+                        font: { weight: 'bold' },
+                        formatter: (value) => `${value}%`
+                    }
+                }
+            }
+        });
+
+        // --- 2. GRAFTS BY AGE CHART ---
+        const ctx2 = document.getElementById('graftsByAgeChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['<30', '30-39', '40-49', '50-59', '60-69'],
+                datasets: [{
+                    label: 'Average Grafts',
+                    data: [2800, 3400, 4480, 4700, 5000],
+                    backgroundColor: '#1a73e8',
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: (c) => `Avg. Grafts: ${c.raw.toLocaleString()}` } },
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'right',
+                        color: '#444',
+                        font: { weight: 'bold' },
+                        formatter: (value) => value.toLocaleString()
+                    }
+                },
+                scales: { x: { grid: { display: false } } }
+            }
+        });
+        
+        // --- 3. PATIENT RESULT DISTRIBUTION CHART ---
+        const ctx3 = document.getElementById('resultDistributionChart').getContext('2d');
+        new Chart(ctx3, {
+            type: 'bar',
+            data: {
+                labels: ['< 3500 Grafts', '> 3500 Grafts'],
+                datasets: [{
+                    label: 'Likelihood of "Good Result"',
+                    data: [65, 85], // Represents a 20 percentage point increase
+                    backgroundColor: ['#f44336', '#4caf50'],
+                    barPercentage: 0.6,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: (c) => `${c.raw}% Likelihood` } },
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: '#444',
+                        font: { weight: 'bold' },
+                        formatter: (value) => `${value}%`
+                    }
+                },
+                scales: { y: { beginAtZero: true, max: 100, grid: { display: false }, ticks: { callback: (v) => v + '%' } } }
+            }
+        });
+        
+        // --- 4. BRANCH DISTRIBUTION CHART ---
+        const ctx4 = document.getElementById('branchDistributionChart').getContext('2d');
+        new Chart(ctx4, {
+            type: 'bar',
+            data: {
+                labels: ['<20', '20-29', '30-39', '40-49', '50+'],
+                datasets: [
+                    {
+                        label: 'Haridwar',
+                        data: [45, 380, 450, 120, 30],
+                        backgroundColor: '#1a73e8',
+                        borderRadius: 4,
+                    },
+                    {
+                        label: 'Delhi',
+                        data: [20, 95, 130, 110, 45],
+                        backgroundColor: '#a3a3a3',
+                        borderRadius: 4,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true },
+                    tooltip: { mode: 'index' },
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: '#444',
+                        font: { weight: 'bold' },
+                        formatter: (value) => value
+                    }
+                },
+                scales: {
+                    y: { grid: { color: '#e9ecef' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // --- 5. RETENTION CURVE CHART ---
+        const ctx5 = document.getElementById('retentionChart').getContext('2d');
+        new Chart(ctx5, {
+            type: 'line',
+            data: {
+                labels: ['M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'M7', 'M8+'],
+                datasets: [{
+                    label: '% Patients Attending',
+                    data: [45, 38, 30, 15, 8, 3, 1, 0],
+                    borderColor: '#4caf50',
+                    backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: (c) => `${c.raw}% Attended` } },
+                    datalabels: {
+                        align: 'end',
+                        color: '#444',
+                        font: { weight: 'bold' },
+                        formatter: (value) => `${value}%`
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 50,
+                        grid: { color: '#e9ecef' },
+                        ticks: { callback: (value) => value + '%' }
+                    },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+        
+        // --- 6. MONTHLY SURGERIES CHART ---
+        const ctx6 = document.getElementById('monthlySurgeriesChart').getContext('2d');
+        new Chart(ctx6, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+                datasets: [{
+                    label: 'Number of Surgeries',
+                    data: [290, 278, 247, 273, 285, 290, 275, 204],
+                    borderColor: '#1a73e8',
+                    backgroundColor: 'rgba(26, 115, 232, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: (c) => `${c.raw} Surgeries` } },
+                    datalabels: {
+                        align: 'end',
+                        color: '#444',
+                        font: { weight: 'bold' },
+                        formatter: (value) => value
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#e9ecef' },
+                        title: { display: true, text: 'Number of Surgeries' }
+                    },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
