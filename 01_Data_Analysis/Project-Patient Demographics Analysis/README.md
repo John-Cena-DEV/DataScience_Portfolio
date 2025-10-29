@@ -106,7 +106,7 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 ### 🔗 Correlation Analysis  
 - **Grafts vs Patient Result:** Moderate positive correlation (more grafts → higher success rate)  
 - **Age vs Recovery:** Slight negative correlation (younger patients recover faster)  
-<img width="2112" height="969" alt="AVERAGE of Grafts vs Age Bin" src="https://github.com/user-attachments/assets/ec2a0b75-67e0-473b-8455-b5db509552e6" />
+<img width="1000" height="500" alt="Code_Generated_Image (1)" src="https://github.com/user-attachments/assets/16978904-93fc-4999-bf7a-7da3aef708e9" />
 
 
 ### 📈 Forecasting & Predictive Modeling  
