@@ -77,7 +77,8 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 - **Pivot Table:** Age wise demographics across branches  
 - **Insight:** Most patients (45%) are in the 30–39 age group, indicating the core customer base.
 - **Business Recommendation:** Target marketing campaigns to this segment.
-<img width="1118" height="615" alt="Branch vs Age" src="https://github.com/user-attachments/assets/f7f83bba-f2aa-4d0b-ad1f-9f356348a7cb" />
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/a01a8613-940a-4f4d-87db-9233fa0dfc73" />
+
 
 
 ### 4️⃣ Patient Result Distribution  
