@@ -59,7 +59,7 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 ## 📈 Exploratory Data Analysis (EDA)  
 
 ### 1️⃣ Patient Demographics Analysis    
-- **Insight:** Most patients (45%) are in the 30–39 age group, indicating the core customer base.
+- **Insight:** Most patients (45%) are in the 20–29 age group, indicating the core customer base.
 - **Business Recommendation:** Target marketing campaigns to this segment.
 <img width="1176" height="575" alt="image" src="https://github.com/user-attachments/assets/bbaccb25-78e9-41cb-96bd-b3de6b14dbc5" />
 
