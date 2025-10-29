@@ -61,7 +61,8 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 ### 1️⃣ Patient Demographics Analysis    
 - **Insight:** Most patients (45%) are in the 20–29 age group, indicating the core customer base.
 - **Business Recommendation:** Target marketing campaigns to this segment.
-<img width="1176" height="575" alt="image" src="https://github.com/user-attachments/assets/bbaccb25-78e9-41cb-96bd-b3de6b14dbc5" />
+<img width="1000" height="500" alt="Code_Generated_Image" src="https://github.com/user-attachments/assets/fba44646-27a1-42e0-9dbb-0187dead7f44" />
+
 
 
 ### 2️⃣ Case Type & Grafts  
