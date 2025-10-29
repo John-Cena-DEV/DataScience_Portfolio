@@ -69,7 +69,8 @@ The objective is to showcase **end-to-end data analysis workflow** using **Googl
 - **Pivot Table:** Average grafts per Case Type  
 - **Insight:** Average grafts increase steadily with patient age, from ~2800 in patients under 30 to ~4000 in patients over 40. Higher clinical grades also correspond to higher graft requirements.
 - **Business Recommendation:** This helps in inventory planning for graft supplies and cost estimation per age group. 
-<img width="1176" height="575" alt="image" src="https://github.com/user-attachments/assets/2e0a96bc-b9fa-4da6-922f-6841f2ccd623" />
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/86641488-2129-494e-9d14-03483c95d3b4" />
+
 
 
 ### 3️⃣ Branch Distribution  
